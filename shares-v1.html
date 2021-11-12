@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="stylesheet" href="style.css">
+    <title>Share Trader 1.0</title>
+</head>
+<body>
+    <!-- User entry details -->
+    <header>
+        <h1>Share Trader 1.0</h1>
+    </header>
+    <main>
+        <!-- "User wallet" -->
+        <div>
+            <div>Balance: <span id="userBalance"></span></div>
+        </div>
+        <div id="marketplace">
+            <div class="shareName">Club</div>
+            <div class="sharePrice">Share Price</div>
+            <div class="lastDvnd">Last Dividend</div>
+            <div class="shares">Shares</div>
+
+            <div class="shareName arsenal">Arsenal</div>
+            <div class="sharePrice arsenal" id="priceArsenal"></div>
+            <div class="lastDvnd arsenal" id="lastDvndArsenal"></div>
+            <div class="shares arsenal" id="sharesArsenal"></div>
+            <div class="shareBuy"><button type="button" onclick="buyArsenal()">Buy</button></div>
+            <div class="shareSell"><button type="button" onclick="sellArsenal()">Sell</button></div>
+
+            <div class="shareName astonVilla">Aston Villa</div>
+            <div class="sharePrice astonVilla" id="priceAstonVilla"></div>
+            <div class="lastDvnd astonVilla" id="lastDvndAstonVilla"></div>
+            <div class="shares astonVilla" id="sharesAstonVilla"></div>
+            <div class="shareBuy"><button type="button" onclick="buyAstonVilla()">Buy</button></div>
+            <div class="shareSell"><button type="button" onclick="sellAstonVilla()">Sell</button></div>
+
+            <div class="shareName blackburn">Blackburn Rovers</div>
+            <div class="sharePrice blackburn" id="priceBlackburn"></div>
+            <div class="lastDvnd blackburn" id="lastDvndBlackburn"></div>
+            <div class="shares blackburn" id="sharesBlackburn"></div>
+            <div class="shareBuy"><button type="button" onclick="buyBlackburn()">Buy</button></div>
+            <div class="shareSell"><button type="button" onclick="sellBlackburn()">Sell</button></div>
+
+            <div class="shareName liverpool">Liverpool</div>
+            <div class="sharePrice liverpool" id="priceLiverpool"></div>
+            <div class="lastDvnd liverpool" id="lastDvndLiverpool"></div>
+            <div class="shares liverpool" id="sharesLiverpool"></div>
+            <div class="shareBuy"><button type="button" onclick="buyLiverpool()">Buy</button></div>
+            <div class="shareSell"><button type="button" onclick="sellLiverpool()">Sell</button></div>
+
+            <div class="shareName manUtd">Manchester United</div>
+            <div class="sharePrice manUtd" id="priceManUtd"></div>
+            <div class="lastDvnd manUtd" id="lastDvndManUtd"></div>
+            <div class="shares manUtd" id="sharesManUtd"></div>
+            <div class="shareBuy"><button type="button" onclick="buyManUtd()">Buy</button></div>
+            <div class="shareSell"><button type="button" onclick="sellManUtd()">Sell</button></div>
+
+            <div class="shareName newcastle">Newcastle United</div>
+            <div class="sharePrice newcastle" id="priceNewcastle"></div>
+            <div class="lastDvnd newcastle" id="lastDvndNewcastle"></div>
+            <div class="shares newcastle" id="sharesNewcastle"></div>
+            <div class="shareBuy"><button type="button" onclick="buyNewcastle()">Buy</button></div>
+            <div class="shareSell"><button type="button" onclick="sellNewcastle()">Sell</button></div>
+
+            <div class="shareName forest">Nottingham Forest</div>
+            <div class="sharePrice forest" id="priceForest"></div>
+            <div class="lastDvnd forest" id="lastDvndForest"></div>
+            <div class="shares forest" id="sharesForest"></div>
+            <div class="shareBuy"><button type="button" onclick="buyForest()">Buy</button></div>
+            <div class="shareSell"><button type="button" onclick="sellForest()">Sell</button></div>
+
+            <div class="shareName qpr">Queens Park Rangers</div>
+            <div class="sharePrice qpr" id="priceQPR"></div>
+            <div class="lastDvnd qpr" id="lastDvndQPR"></div>
+            <div class="shares qpr" id="sharesQPR"></div>
+            <div class="shareBuy"><button type="button" onclick="buyQPR()">Buy</button></div>
+            <div class="shareSell"><button type="button" onclick="sellQPR()">Sell</button></div>
+
+            <div class="shareName tottenham">Tottenham Hotspur</div>
+            <div class="sharePrice tottenham" id="priceTottenham"></div>
+            <div class="lastDvnd tottenham" id="lastDvndTottenham"></div>
+            <div class="shares tottenham" id="sharesTottenham"></div>
+            <div class="shareBuy"><button type="button" onclick="buyTottenham()">Buy</button></div>
+            <div class="shareSell"><button type="button" onclick="sellTottenham()">Sell</button></div>
+
+            <div class="shareName wimbledon">Wimbledon</div>
+            <div class="sharePrice wimbledon" id="priceWimbledon"></div>
+            <div class="lastDvnd wimbledon" id="lastDvndWimbledon"></div>
+            <div class="shares wimbledon" id="sharesWimbledon"></div>
+            <div class="shareBuy"><button type="button" onclick="buyWimbledon()">Buy</button></div>
+            <div class="shareSell"><button type="button" onclick="sellWimbledon()">Sell</button></div>
+
+        </div>
+        <div>
+            <button type="button" onclick="nextSeason()">New season (£25 admin fee)</button>
+        </div>
+        <div id="annualDividends">
+            <div class="shareName">Club</div>
+            <div class="lastDvnd">Dividend</div>
+            <div class="shareBuy">Earnings</div>
+
+            <div class="shareName">Arsenal</div>
+            <div class="lastDvnd" id="dvndArsenal"></div>
+            <div class="shareBuy" id="earnArsenal"></div>
+
+            <div class="shareName">Aston Villa</div>
+            <div class="lastDvnd" id="dvndAstonVilla"></div>
+            <div class="shareBuy" id="earnAstonVilla"></div>
+
+            <div class="shareName">Blackburn Rovers</div>
+            <div class="lastDvnd" id="dvndBlackburn"></div>
+            <div class="shareBuy" id="earnBlackburn"></div>
+
+            <div class="shareName">Liverpool</div>
+            <div class="lastDvnd" id="dvndLiverpool"></div>
+            <div class="shareBuy" id="earnLiverpool"></div>
+
+            <div class="shareName">Manchester United</div>
+            <div class="lastDvnd" id="dvndManUtd"></div>
+            <div class="shareBuy" id="earnManUtd"></div>
+
+            <div class="shareName">Newcastle United</div>
+            <div class="lastDvnd" id="dvndNewcastle"></div>
+            <div class="shareBuy" id="earnNewcastle"></div>
+
+            <div class="shareName">Nottingham Forest</div>
+            <div class="lastDvnd" id="dvndForest"></div>
+            <div class="shareBuy" id="earnForest"></div>
+
+            <div class="shareName">Queens Park Rangers</div>
+            <div class="lastDvnd" id="dvndQPR"></div>
+            <div class="shareBuy" id="earnQPR"></div>
+
+            <div class="shareName">Tottenham Hotspur</div>
+            <div class="lastDvnd" id="dvndTottenham"></div>
+            <div class="shareBuy" id="earnTottenham"></div>
+
+            <div class="shareName">Wimbledon</div>
+            <div class="lastDvnd" id="dvndWimbledon"></div>
+            <div class="shareBuy" id="earnWimbledon"></div>
+
+
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

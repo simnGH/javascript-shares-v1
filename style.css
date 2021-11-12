@@ -1,0 +1,107 @@
+html {
+    font-family: "VT323", "Courier New";
+}
+
+body {
+    font-size: 1.5em;
+}
+
+#marketplace {
+    display: grid;
+    grid-template-columns: 200px 75px 75px 75px 75px 75px;
+}
+
+#annualDividends {
+    display: grid;
+    grid-template-columns: 200px 75px 75px 75px 75px 75px;
+}
+
+.shareName {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.sharePrice {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.lastDvnd {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.shares {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.shareBuy {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.shareSell {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+.arsenal {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+}
+
+.astonVilla {
+    background-color: rgb(182, 13, 168);
+    color: white;
+    border: 2px solid lightskyblue;
+}
+
+.blackburn {
+    background-color: white;
+    color: red;
+    border: 2px solid blue;
+}
+
+.liverpool {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+}
+
+.manUtd {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+}
+
+.newcastle {
+    background-color: black;
+    color: gold;
+    border: 2px solid white;
+}
+
+.forest {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+}
+
+.qpr {
+    background-color: white;
+    color: red;
+    border: 2px solid blue;
+}
+
+.tottenham {
+    background-color: white;
+    color: navy;
+    border: 2px solid navy;
+}
+
+.wimbledon {
+    background-color: navy;
+    color: gold;
+    border: 2px solid gold;
+}
