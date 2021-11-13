@@ -3,17 +3,26 @@ html {
 }
 
 body {
-    font-size: 1.5em;
+    font-size: 1.25em;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+#userBalDiv {
+    padding: 20px 0px;
 }
 
 #marketplace {
     display: grid;
-    grid-template-columns: 200px 75px 75px 75px 75px 75px;
+    grid-template-columns: 40% 12% 12% 12% 12% 12%;
 }
 
 #annualDividends {
     display: grid;
-    grid-template-columns: 200px 75px 75px 75px 75px 75px;
+    grid-template-columns: 40% 12% 12% 12% 12% 12%;
 }
 
 .shareName {
@@ -44,6 +53,12 @@ body {
 .shareSell {
     grid-column-start: 6;
     grid-column-end: 7;
+}
+
+.season {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .arsenal {
